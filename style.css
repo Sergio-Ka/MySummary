@@ -10,36 +10,39 @@ html {
 	font-size: 14px;
 }
 
-div {
+body, div {
 	padding: 0;
 	margin: 0;
 }
 
 .main-page {
     width: 100%;
-    margin: 0;
+	max-width: 1280px;
+    margin: 0 /*auto*/;
     background-color: #ffffff;
 	font-family:'Conv_myriadpro-regular',Sans-Serif;
     font-size: 1rem;
+	color: #3d6cb0;
 }
 
-.main-page__about {
-	width: 34.4%;
-	padding: 5%;
-	border: 1px solid #3d6cb0;
-}
-
-.main-page__block_left {
+.main-page__column_left {
+	float: left;
 	width: 34%;
-	padding: 5%;
+	padding: 4.7%;
 	border: 1px solid #3d6cb0;
 }
 
-.main-page__block_right {
-	float: right;
+.main-page__column_right {
+	float: left;
 	width: 46%;
-	padding: 5%;
+	padding: 4.7%;
 	border: 1px solid #3d6cb0;
+}
+
+.block {
+	width: 100%;
+	border: 1px solid #3d6cb0;
+	margin-top: 27px;
 }
 
 .photo {
@@ -66,27 +69,51 @@ div {
 }
 
 .surname {
-	margin: 0 auto;
+	margin: -20px auto;
 	text-align: center;
 	font-size: 4.6rem;
 	font-weight: bold;
 }
 
 .prof {
-	margin: 0 auto;
+	margin: 20px auto;
 	text-align: center;
 	font-size: 1.8rem;
 	font-weight: bold;
 }
 
-.icon {
+.block-header {
+	display: flex;
+	height: 80px;
+	padding: 0;
+	margin:0;
+	/*border: 1px solid #3d6cb0;*/
+}
+.block-header__icon {
 	display: inline-block;
+	max-width: 100%;
+	/*border: 1px solid #3d6cb0;*/
 }
 
-.header {
+.block-header__cat-def {
 	display: inline-block;
+	margin: auto 8px;
+	font-size: 3.2rem;
+	font-weight: bold;
+	/*border: 1px solid #3d6cb0;*/
 }
 
-.text {
-	font-size: 0.8rem;
+.block-header__line {
+	display: inline-block;
+	width: 100%;
+	margin: auto 0;
+	/*border: 1px solid #3d6cb0;*/
+}
+
+.line {
+	border: 2px solid #3d6cb0;
+}
+
+.block-text {
+	font-size: 1.15rem;
 }
