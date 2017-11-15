@@ -18,40 +18,61 @@ body, div {
 .main-page {
     width: 100%;
 	max-width: 1280px;
-    margin: 0 /*auto*/;
     background-color: #ffffff;
 	font-family:'Conv_myriadpro-regular',Sans-Serif;
     font-size: 1rem;
-	color: #3d6cb0;
 }
 
 .main-page__column_left {
 	float: left;
-	width: 34%;
-	padding: 4.7%;
-	border: 1px solid #3d6cb0;
+	width: 33.28125%; /*426/1280*/
+	margin: 0 6.25% 0 4.84375%; /*62/1280=4,843 80/1280=6,25*/
+	/*border: 1px solid #3d6cb0;*/
 }
 
 .main-page__column_right {
 	float: left;
-	width: 46%;
-	padding: 4.7%;
-	border: 1px solid #3d6cb0;
+	width: 50.9375%; /*652/1280*/
+	margin: 0 4.6875% 0 0; /*60/1280*/
+	/*border: 1px solid #3d6cb0;*/
 }
 
-.block {
-	width: 100%;
-	border: 1px solid #3d6cb0;
-	margin-top: 27px;
+.about {
+	height: 586px;
 }
+
+.profile {
+	height: 381px;
+}
+
+.contact {
+	height: 350px;
+}
+
+.skills {
+	height: 488px;
+}
+
+.education {
+	height: 707px;
+	margin-top: 74px;
+}
+
+.experience {
+	height: 583px;
+}
+
+.software {
+	height: 442px;
+}
+
 
 .photo {
 	width: 239px;
 	height: 239px;
 	border: 2px solid #3d6cb0;
 	border-radius: 50%;
-	margin: 5.5% auto 4.8%;
-	padding: auto;
+	margin: 0 auto;
 }
 
 .photo__circle {
@@ -63,20 +84,17 @@ body, div {
 }
 
 .name {
-	margin: 0 auto;
 	text-align: center;
 	font-size: 4.1rem;
 }
 
 .surname {
-	margin: -20px auto;
 	text-align: center;
 	font-size: 4.6rem;
 	font-weight: bold;
 }
 
 .prof {
-	margin: 20px auto;
 	text-align: center;
 	font-size: 1.8rem;
 	font-weight: bold;
@@ -98,8 +116,9 @@ body, div {
 .block-header__cat-def {
 	display: inline-block;
 	margin: auto 8px;
-	font-size: 3.2rem;
-	font-weight: bold;
+	font-size: 3.15rem;
+	font-weight: 900;
+	color: #3d6cb0;
 	/*border: 1px solid #3d6cb0;*/
 }
 
@@ -114,6 +133,6 @@ body, div {
 	border: 2px solid #3d6cb0;
 }
 
-.block-text {
+.block-content {
 	font-size: 1.15rem;
 }
