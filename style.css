@@ -154,7 +154,7 @@ body, div {
 
 .contact-table__row {
 	display: table-row;
-	min-height: 56px;
+	height: 56px;
 }
 
 .contact-table__cell {
