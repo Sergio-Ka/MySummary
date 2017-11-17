@@ -22,7 +22,7 @@ body, div {
     background-color: #ffffff;
 	font-family:'Conv_myriadpro-regular',Sans-Serif;
     font-size: 1rem;
-	/*margin: 0 auto;*/
+	margin: 0 auto;/**/
 }
 
 .main-page__column-left {
