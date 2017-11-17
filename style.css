@@ -22,17 +22,17 @@ body, div {
     background-color: #ffffff;
 	font-family:'Conv_myriadpro-regular',Sans-Serif;
     font-size: 1rem;
-	margin: 0 auto;/**/
+	/*margin: 0 auto;*/
 }
 
-.main-page__column_left {
+.main-page__column-left {
 	float: left;
 	width: 33.359375%; /*427/1280*/
 	margin: 6.796875% 6.171875% 0 4.84375%; /*62/1280=4,843 79/1280=6,25 87/1280=*/
 	/*border: 1px solid #3d6cb0;*/
 }
 
-.main-page__column_right {
+.main-page__column-right {
 	float: left;
 	width: 50.9375%; /*652/1280*/
 	margin: 5.625% 4.6875% 0 0; /*60/1280 72/1280=5,625*/
@@ -163,10 +163,8 @@ body, div {
 }
 
 .contact-table__cell_color_blue {
-	display: table-cell;
 	padding-right: 46px;
 	color: #3d6cb0;
-	font-size: 1.53rem;
 	font-weight: bold;
 }
 
@@ -200,14 +198,123 @@ body, div {
 }
 
 .skills-scale__circle_inactive {
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	margin: 0 5px;
 	background: #e6e6e6;
 }
 
 .skills-scale__circle_inactive:last-child {
 	margin-right: 0;
+}
+
+.education-content {
+	
+}
+
+.content-list {
+	list-style: none;
+	margin: 25px 0 0 15px;
+}
+
+.content-list__item {
+	padding-top: 10px;
+}
+
+.content-list__item:before {
+	content: "";
+
+	display: inline-block;
+	margin: 0 19px 0 -42px;
+
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #000000;
+}
+
+.content-list__item:first-child {
+	padding-top: 0;
+}
+
+.item-name {
+	display: inline-block;
+	font-size: 1.92rem;
+	font-weight: bold;
+}
+
+.item-name_color_blue {
+	color: #3d6cb0;
+}
+
+.item-date {
+	display: inline-block;
+	font-size: 1.92rem;
+	font-weight: lighter;
+	margin-left: 20px;
+}
+
+.item-sec-name {
+	margin-top: 3px;
+	font-size: 1.92rem;
+}
+
+.item-description {
+	margin-top: 5px;
+	font-size: 1.14rem;
+	line-height: 1.365rem;
+}
+
+.experience__content {
+	padding-top: 6px;
+}
+
+.software-feature {
+	font-size: 1.92rem;
+	white-space: nowrap;
+	margin-bottom: 10px;
+}
+
+.software-scale {
+	width: 285px;
+	height: 23px;
+	background: #e6e6e6;
+}
+
+.software-scale_num1 {
+	width: 260px;
+	background: #3d6cb0;
+}
+
+.software-scale_num2 {
+	width: 237px;
+	background: #3d6cb0;
+}
+
+.software-scale_num3 {
+	width: 201px;
+	background: #3d6cb0;
+}
+
+.software-scale_num4 {
+	width: 176px;
+	background: #3d6cb0;
+}
+
+.software-scale_num5 {
+	width: 161px;
+	background: #3d6cb0;
+}
+
+.software-scale_num6 {
+	width: 260px;
+	background: #3d6cb0;
+}
+
+.container {
+	float: left;
+	width: 50%;
+	margin: 20px 0 0 8px;
+}
+
+.container:nth-child(2n) {
+	float: right;
+	width: 44%;
 }
