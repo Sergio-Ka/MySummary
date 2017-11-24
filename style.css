@@ -20,7 +20,7 @@
 	max-width: 1280px;
 	min-height: 1810px;
 	margin: 0;
-	/*margin: 0 auto; временно отключено для удобства работы с Perfect Pixel*/
+	margin: 0 auto; /*временно отключено для удобства работы с Perfect Pixel*/
 }
 
 .column-1 {
