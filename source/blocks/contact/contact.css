@@ -1,0 +1,27 @@
+.contact {
+	min-height: 348px;
+}
+
+.table {
+	display: table;
+}
+
+.contact__table {
+	margin: 20px 0 0 0; /*20px*/
+}
+
+.table__row {
+	display: table-row;
+	height: 56px; /*56px*/
+}
+
+.table__cell {
+	display: table-cell;
+	font-size: 1.53rem;
+}
+
+.table__cell_color_blue {
+	padding-right: 2.678571vw;/*45px;*/
+	color: #3d6cb0;
+	font-weight: bold;
+}

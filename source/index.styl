@@ -1,0 +1,98 @@
+@import 'blocks/about/about.styl'
+@import 'blocks/profile/profile.styl'
+@import 'blocks/contact/contact.styl'
+@import 'blocks/skills/skills.styl'
+@import 'blocks/education/education.styl'
+@import 'blocks/experience/experience.styl'
+@import 'blocks/software/software.styl'
+@import 'blocks/common/header-of-block/header-of-block.styl'
+
+@font-face {
+	font-family: 'Conv_myriadpro-regular';
+	src: url('fonts/myriadpro-regular.eot');
+	src: local('☺'), url('fonts/myriadpro-regular.woff') format('woff'), url('fonts/myriadpro-regular.ttf') format('truetype'), url('fonts/myriadpro-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.main
+	font-size 14px
+	&__page
+		width 100%
+		max-width 1280px
+		min-height 1810px
+		margin 0 auto
+
+.page
+	font-family 'Conv_myriadpro-regular', Sans-Serif
+	background #ffffff
+
+.column-1
+	float left
+	width 33.28125%
+	margin 7.109375% 6.171875% 0 4.921875%
+
+.column-2
+	float left
+	width 50.9375%
+	margin 6.09375% 4.6875% 0 0
+
+
+.content-list
+	list-style none
+	&__item
+		padding-bottom 11px
+	&__item:before
+		content ""
+		display inline-block
+		margin 0 3% 0 -7%
+		width 20px
+		height 20px
+		border-radius 50%
+		background #000000
+
+.item-name
+	display inline-block
+	font-size 1.92rem
+	font-weight bold
+	&_color_blue
+		color #3d6cb0
+.item-date
+	display inline-block
+	font-size 1.92rem
+	font-weight lighter
+	padding-left 3%
+	
+.item-sec-name
+	padding-top 2px
+	font-size 1.92rem
+
+.item-description
+	padding-top 5px
+	font-size 1.14rem
+	line-height 1.365rem
+
+@media only screen and (max-width 375px)
+	.main
+		font-size 10px
+	.line
+		display none
+
+@media only screen and (max-width 840px)
+	.column-1
+		float left
+		width 88.90625%
+		margin 7.109375% 6.171875% 0 4.921875%
+	.column-2
+		float left
+		width 88.90625%
+		margin 0 6.171875% 0 4.921875%
+	.about
+		padding 0
+
+@media only screen and (max-width 1050px)
+	.container-1
+		width 100%
+	.container-2
+		float left
+		width 100%

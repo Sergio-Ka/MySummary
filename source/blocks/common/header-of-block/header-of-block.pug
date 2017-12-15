@@ -1,0 +1,6 @@
+mixin header-of-block(imageName, catDef)
+	div(class='header-of-block')
+		img(class='header-of-block__icon', src='public/images/'+imageName+'.png')/
+		div(class='category-definition header-of-block__cat-def')= catDef
+		div(class='header-of-block__line')
+			hr(class='line')/

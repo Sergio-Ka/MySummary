@@ -1,0 +1,60 @@
+.software {
+	min-height: 446px;
+}
+
+.software-feature {
+	font-size: 1.92rem;
+	white-space: nowrap;
+	margin-bottom: 12px;
+}
+
+.software-scale {
+	width: 285px; /*16.9642857vw;*/
+	height: 23px;
+	background: #e6e6e6;
+	margin-bottom: 21px;
+}
+
+.software-scale_num1 {
+	width: 91.228070%; /*260px;*/
+	background: #3d6cb0;
+}
+
+.software-scale_num2 {
+	width: 83.157894%; /*237px;*/
+	background: #3d6cb0;
+}
+
+.software-scale_num3 {
+	width: 70.526315%; /*201px;*/
+	background: #3d6cb0;
+}
+
+.software-scale_num4 {
+	width: 61.754385%; /*176px;*/
+	background: #3d6cb0;
+}
+
+.software-scale_num5 {
+	width: 56.491228%;/*161px;*/
+	background: #3d6cb0;
+}
+
+.software-scale_num6 {
+	width: 91.228070%; /*260px;*/
+	background: #3d6cb0;
+}
+
+.container-1 {
+	float: left;
+	width: 50%;
+}
+
+.container-2 {
+	float: right;
+	width: 44%;
+}
+
+.software-content__container {
+	margin: 15px 0 0 1%;
+}
