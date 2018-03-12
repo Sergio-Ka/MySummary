@@ -6,15 +6,6 @@
 	font-style: normal;
 }
 
-@import 'blocks/about/about.styl'
-@import 'blocks/profile/profile.styl'
-@import 'blocks/contact/contact.styl'
-@import 'blocks/skills/skills.styl'
-@import 'blocks/education/education.styl'
-@import 'blocks/experience/experience.styl'
-@import 'blocks/software/software.styl'
-@import 'blocks/common/header-of-block/header-of-block.styl'
-
 .main
 	font-size 14px
 	&__page
@@ -33,39 +24,15 @@
 		width 50.9375%
 		margin 6.09375% 4.6875% 0 0
 
-.content-list
-	list-style none
-	&__item
-		padding-bottom 11px
-	&__item:before
-		content ""
-		display inline-block
-		margin 0 3% 0 -7%
-		width 20px
-		height 20px
-		border-radius 50%
-		background #000000
-
-.item-name
-	display inline-block
-	font-size 1.92rem
-	font-weight bold
-	&_color_blue
-		color #3d6cb0
-.item-date
-	display inline-block
-	font-size 1.92rem
-	font-weight lighter
-	padding-left 3%
-	
-.item-sec-name
-	padding-top 2px
-	font-size 1.92rem
-
-.item-description
-	padding-top 5px
-	font-size 1.14rem
-	line-height 1.365rem
+@import 'blocks/common/header-of-block/header-of-block.styl'
+@import 'blocks/common/content-list__item/content-list__item.styl'
+@import 'blocks/about/about.styl'
+@import 'blocks/profile/profile.styl'
+@import 'blocks/contact/contact.styl'
+@import 'blocks/skills/skills.styl'
+@import 'blocks/education/education.styl'
+@import 'blocks/experience/experience.styl'
+@import 'blocks/software/software.styl'
 
 @media only screen and (max-width 375px)
 	.main
@@ -86,8 +53,8 @@
 		padding 0
 
 @media only screen and (max-width 1050px)
-	.container-1
+	.software-content__container-1
 		width 100%
-	.container-2
+	.software-content__container-2
 		float left
 		width 100%
