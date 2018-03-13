@@ -52,6 +52,14 @@
 .line {
   border: 2px solid #3d6cb0;
 }
+.content-list__item-name {
+  display: inline-block;
+  font-size: 1.92rem;
+  font-weight: bold;
+}
+.content-list__item-name_color_blue {
+  color: #3d6cb0;
+}
 .content-list__item {
   padding-bottom: 11px;
 }
@@ -63,14 +71,6 @@
   height: 20px;
   border-radius: 50%;
   background: #000;
-}
-.content-list__item-name {
-  display: inline-block;
-  font-size: 1.92rem;
-  font-weight: bold;
-}
-.content-list__item-name_color_blue {
-  color: #3d6cb0;
 }
 .content-list__item-date {
   display: inline-block;
