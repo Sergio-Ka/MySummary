@@ -8,13 +8,13 @@
 
 .main
 	font-size 14px
+	font-family 'Myriadpro-regular', Sans-Serif
+	background #ffffff
 	&__page
 		width 100%
 		max-width 1280px
 		min-height 1810px
 		margin 0 auto
-		font-family 'Myriadpro-regular', Sans-Serif
-		background #ffffff
 	&__column-1
 		float left
 		width 33.28125%
@@ -24,21 +24,9 @@
 		width 50.9375%
 		margin 6.09375% 4.6875% 0 0
 
-@import 'blocks/common/header-of-block/header-of-block.styl'
-@import 'blocks/common/content-list__item/content-list__item.styl'
-@import 'blocks/about/about.styl'
-@import 'blocks/profile/profile.styl'
-@import 'blocks/contact/contact.styl'
-@import 'blocks/skills/skills.styl'
-@import 'blocks/education/education.styl'
-@import 'blocks/experience/experience.styl'
-@import 'blocks/software/software.styl'
-
 @media only screen and (max-width 375px)
 	.main
 		font-size 10px
-	.line
-		display none
 
 @media only screen and (max-width 840px)
 	.main__column-1
@@ -49,12 +37,14 @@
 		float left
 		width 88.90625%
 		margin 0 6.171875% 0 4.921875%
-	.about
-		padding 0
 
-@media only screen and (max-width 1050px)
-	.software-content__container-1
-		width 100%
-	.software-content__container-2
-		float left
-		width 100%
+
+@import 'blocks/common/header-of-block/header-of-block.styl'
+@import 'blocks/common/content-list__item/content-list__item.styl'
+@import 'blocks/about/about.styl'
+@import 'blocks/profile/profile.styl'
+@import 'blocks/contact/contact.styl'
+@import 'blocks/skills/skills.styl'
+@import 'blocks/education/education.styl'
+@import 'blocks/experience/experience.styl'
+@import 'blocks/software/software.styl'
