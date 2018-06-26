@@ -180,6 +180,18 @@
   display: table-cell;
   font-size: 1.53rem;
 }
+.contact__cell-mail {
+  text-decoration: none;
+  color: #000;
+}
+.contact__cell-tel {
+  text-decoration: none;
+  color: #000;
+}
+.contact__cell-site {
+  text-decoration: none;
+  color: #000;
+}
 .contact__cell_color_blue {
   padding-right: 2.678571vw;
   color: #3d6cb0;
