@@ -5,4 +5,5 @@ import './blocks/common/header-of-block/images/icon-skills.png';
 import './blocks/common/header-of-block/images/icon-education.png';
 import './blocks/common/header-of-block/images/icon-experience.png';
 import './blocks/common/header-of-block/images/icon-software.png';
+import './blocks/common/content-list__item/images/list-item-dot.png';
 import './images/favicon.ico';

@@ -83,8 +83,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__blocks_common_header_of_block_images_icon_experience_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__blocks_common_header_of_block_images_icon_experience_png__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__blocks_common_header_of_block_images_icon_software_png__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__blocks_common_header_of_block_images_icon_software_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__blocks_common_header_of_block_images_icon_software_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_favicon_ico__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_favicon_ico___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_favicon_ico__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__blocks_common_content_list_item_images_list_item_dot_png__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__blocks_common_content_list_item_images_list_item_dot_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__blocks_common_content_list_item_images_list_item_dot_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_favicon_ico__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_favicon_ico___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_favicon_ico__);
+
 
 
 
@@ -138,6 +141,12 @@ module.exports = __webpack_require__.p + "images/icon-software.png";
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/list-item-dot.png";
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/favicon.ico";

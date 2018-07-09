@@ -9,6 +9,7 @@
   font-size: 14px;
   font-family: 'Myriadpro-regular', Sans-Serif;
   background: #fff;
+  color: #000;
 }
 .main__page {
   width: 100%;
@@ -64,6 +65,7 @@
 .category-definition {
   font-size: 3.15rem;
   font-weight: bolder;
+  text-transform: uppercase;
   color: #3d6cb0;
 }
 .line {
@@ -78,21 +80,13 @@
   display: inline-block;
   font-size: 1.92rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .content-list__item-name_color_blue {
   color: #3d6cb0;
 }
 .content-list__item {
   padding-bottom: 11px;
-}
-.content-list__item:before {
-  content: "";
-  display: inline-block;
-  margin: 0 3% 0 -7%;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #000;
 }
 .content-list__item-date {
   display: inline-block;
@@ -103,6 +97,7 @@
 .content-list__item-sec-name {
   padding-top: 2px;
   font-size: 1.92rem;
+  text-transform: uppercase;
 }
 .content-list__item-description {
   padding-top: 5px;
@@ -110,7 +105,7 @@
   line-height: 1.365rem;
 }
 .content-list {
-  list-style: none;
+  list-style-image: url(images/list-item-dot.png);
 }
 .about {
   min-height: 498px;
@@ -122,7 +117,13 @@
   margin: auto;
 }
 .about__name {
-  margin: 22px 0 -18px 0;
+  margin: 42px 0 0 0;
+  line-height: 34px;
+}
+@media only screen and (max-width: 840px) {
+  .about {
+    padding: 0;
+  }
 }
 .photo {
   height: 100%;
@@ -139,21 +140,19 @@
 .name {
   text-align: center;
   font-size: 4.1rem;
+  text-transform: uppercase;
 }
 .surname {
   text-align: center;
   font-size: 4.5rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .prof {
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
-}
-@media only screen and (max-width: 840px) {
-  .about {
-    padding: 0;
-  }
+  text-transform: uppercase;
 }
 .profile {
   min-height: 383px;
@@ -174,7 +173,7 @@
 }
 .contact__row {
   display: table-row;
-  height: 56px;
+  height: 4rem;
 }
 .contact__cell {
   display: table-cell;
@@ -197,6 +196,9 @@
   color: #3d6cb0;
   font-weight: bold;
 }
+.contact__cell_case_upper {
+  text-transform: uppercase;
+}
 .skills {
   min-height: 450px;
 }
@@ -209,6 +211,7 @@
 .skill-name {
   font-size: 1.92rem;
   text-align: center;
+  text-transform: uppercase;
 }
 .skill-scale {
   display: flex;
@@ -249,6 +252,7 @@
 }
 .software-name {
   font-size: 1.92rem;
+  text-transform: uppercase;
   white-space: nowrap;
   margin-bottom: 12px;
 }
