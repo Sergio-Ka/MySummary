@@ -71,24 +71,6 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_styl__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_styl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index_styl__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_common_header_of_block_images_icon_1_png__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_common_header_of_block_images_icon_1_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__blocks_common_header_of_block_images_icon_1_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_common_header_of_block_images_icon_2_png__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_common_header_of_block_images_icon_2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__blocks_common_header_of_block_images_icon_2_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_common_header_of_block_images_icon_3_png__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_common_header_of_block_images_icon_3_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__blocks_common_header_of_block_images_icon_3_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__blocks_common_header_of_block_images_icon_4_png__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__blocks_common_header_of_block_images_icon_4_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__blocks_common_header_of_block_images_icon_4_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__blocks_common_header_of_block_images_icon_5_png__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__blocks_common_header_of_block_images_icon_5_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__blocks_common_header_of_block_images_icon_5_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__blocks_common_header_of_block_images_icon_6_png__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__blocks_common_header_of_block_images_icon_6_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__blocks_common_header_of_block_images_icon_6_png__);
-
-
-
-
-
-
 
 
 /***/ }),
@@ -96,42 +78,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon_1.png";
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon_2.png";
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon_3.png";
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon_4.png";
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon_5.png";
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon_6.png";
 
 /***/ })
 /******/ ]);

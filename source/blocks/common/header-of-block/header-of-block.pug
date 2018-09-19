@@ -1,6 +1,6 @@
 mixin header-of-block(imageName, catDef)
 	div(class="header-of-block")
-		img(class="header-of-block__icon", src="public/images/"+imageName+".png")/
+		img(class="header-of-block__icon", src=require('./blocks/common/header-of-block/images/'+imageName+'.png'))/
 		div(class="header-of-block__cat-def")
 			div(class="category-definition")= catDef
 		div(class="header-of-block__line")
