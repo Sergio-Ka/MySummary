@@ -1,6 +1,17 @@
 # MySummary
-My Summary / Мое резюме
+My Summary
 
 GitHab Pages: https://sergio-ka.github.io/MySummary/
 
-Проект верстки резюме. Запускаем index.html, файлы берутся из папки /public. Остальное используется для сборки.
+Сверстанное резюме. Разбито на элементы в соответсвии с методологией БЭМ. Запускаем index.html из папки /public.
+
+Использованы следующие скрипты поставленные из NPM:
+- css-loader
+- extract-text-webpack-plugin
+- file-loader
+- html-webpack-plugin
+- pug
+- pug-loader
+- stylus
+- stylus-loader
+- webpack
