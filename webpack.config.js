@@ -17,7 +17,7 @@ module.exports = {
 
     plugins: [
         new ExtractTextPlugin('style.css'),
-        new HtmlWebpackPlugin({template: 'source/index.pug', filename: './index.html'})
+        new HtmlWebpackPlugin({template: 'source/index.pug', filename: '../index.html'})
     ],
 
     module: {
