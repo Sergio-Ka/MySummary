@@ -3,15 +3,8 @@ My Summary
 
 GitHab Pages: https://sergio-ka.github.io/MySummary/
 
-Сверстанное резюме. Разбито на элементы в соответсвии с методологией БЭМ. Запускаем index.html из папки /public.
+Сверстанное резюме. Учебный проект. Разбито на элементы в соответсвии с методологией БЭМ. Стартовый файл запуска в статике index.html из папки /public.
 
-Использованы следующие скрипты поставленные из NPM:
-- css-loader
-- extract-text-webpack-plugin
-- file-loader
-- html-webpack-plugin
-- pug
-- pug-loader
-- stylus
-- stylus-loader
-- webpack
+Команды:
+- разовая сборка: npm run build,
+- сервер с live reload: npm run server.
