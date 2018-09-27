@@ -1,5 +1,5 @@
 doctype html
-html(class="main")
+html.main
     head
         meta(charset = "utf-8")/
         meta(name = "description", content = "Верстка макета резюме (практика верстки 1)")/
@@ -8,15 +8,15 @@ html(class="main")
         meta(name = "viewport", content = "initial-scale=1.0, width=device-width")/
         link(rel = "shortcut icon", href = require('./images/favicon.ico'), type = "image/x-icon")/
         title Моё резюме
-    body(class="main__page")
+    body.main__page
         include blocks/common/header-of-block/header-of-block.pug
         include blocks/common/content-list__item/content-list__item.pug
-        div(class="main__column-1")
+        div.main__column-1
             include blocks/about/about.pug
             include blocks/profile/profile.pug
             include blocks/contact/contact.pug
             include blocks/skills/skills.pug
-        div(class="main__column-2")
+        div.main__column-2
             include blocks/education/education.pug
             include blocks/experience/experience.pug
             include blocks/software/software.pug

@@ -1,7 +1,7 @@
 mixin header-of-block(imageName, catDef)
-	div(class="header-of-block")
-		img(class="header-of-block__icon", src=require('./blocks/common/header-of-block/images/'+imageName+'.png'))/
-		div(class="header-of-block__cat-def")
-			div(class="category-definition")= catDef
-		div(class="header-of-block__line")
-			hr(class="line")/
+	.header-of-block
+		img.header-of-block__icon(src=require('./blocks/common/header-of-block/images/'+imageName+'.png'))
+		.header-of-block__cat-def
+			.category-definition= catDef
+		.header-of-block__line
+			hr.line
