@@ -279,12 +279,12 @@ html {
   min-height: 1810px;
   margin: 0 auto;
 }
-__column-1 {
+.summary__column-1 {
   float: left;
   width: 33.28125%;
   margin: 7.109375% 6.171875% 0 4.921875%;
 }
-__column-2 {
+.summary__column-2 {
   float: left;
   width: 50.9375%;
   margin: 6.09375% 4.6875% 0 0;
