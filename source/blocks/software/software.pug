@@ -1,16 +1,16 @@
 mixin software-level(softwareName, softwareLevel)
-    div(class="software-name")= softwareName
-    div(class="software-scale")
-        div(class="software-scale software-scale_num"+softwareLevel)
+    .software-name= softwareName
+    .software-scale
+        .software-scale(class="software-scale_num"+softwareLevel)
 
-div(class="software")
+section.software
     +header-of-block("icon-software", "software")
-    div(class="software-content")
-        div(class="software-content__container-1")
+    .software-content
+        .software-content__container-1
             +software-level("photoshop", 1)
             +software-level("illustrator", 3)
             +software-level("indesign", 5)
-        div(class="software-content__container-2")
+        .software-content__container-2
             +software-level("dreamweaver", 2)
             +software-level("after effects", 4)
             +software-level("html&css3", 6)

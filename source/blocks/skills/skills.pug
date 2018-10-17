@@ -1,17 +1,17 @@
 mixin skill(skillName, skillLevel)
-    div(class="skills__feature")
-        div(class="skill-name")= skillName
-    div(class="skill-scale")
+    .skills__feature
+        .skill-name= skillName
+    .skill-scale
         - for(var i=0;i<12;i++) {
             - if(i<skillLevel)
-                div(class="skill-scale__circle")
+                .skill-scale__circle
             - else
-                div(class="skill-scale__circle skill-scale__circle_inactive")
+                .skill-scale__circle.skill-scale__circle_inactive
         - }
 
-div(class="skills")
+section.skills
     +header-of-block("icon-skills", "skills")
-    div(class="skills__content")
+    .skills__content
         +skill("creative", 9)
         +skill("teamwork", 11)
         +skill("innovate", 6)
