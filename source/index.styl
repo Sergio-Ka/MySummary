@@ -9,31 +9,36 @@
 html
   font-size 14px
   font-family 'Myriadpro-regular', 'Arial', Sans-Serif
-
-.summary
-  width 100%
-  max-width 1280px
-  min-height 1810px
-  margin 0 auto
+  background #ffffff
+  color #000000
+  &__page
+    width 100%
+    max-width 91.42rem
+    min-height 129.285rem
+    margin 0 auto
   &__column-1
     float left
-    width 33.28125%
-    margin 7.109375% 6.171875% 0 4.921875%
+    width 30.425rem
+    margin 6.5rem 5.6rem 0 4.5rem
   &__column-2
     float left
-    width 50.9375%
-    margin 6.09375% 4.6875% 0 0
+    width 46.6rem
+    margin 5.5rem 0 0 0
 
-@media only screen and (max-width 375px)
+@media only screen and (max-width 26.785rem)
   .main
     font-size 10px
 
-@media only screen and (max-width 840px)
+@media only screen and (max-width 60rem)
   .main__column-1
-    float left
     width 88.90625%
-    margin 7.109375% 6.171875% 0 4.921875%
+    margin 1rem
   .main__column-2
-    float left
     width 88.90625%
-    margin 0 6.171875% 0 4.921875%
+    margin 1rem
+
+@media only screen and (max-width 87rem)
+  .main__column-1
+    margin 1rem
+  .main__column-2
+    margin 1rem
