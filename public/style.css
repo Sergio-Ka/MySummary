@@ -269,24 +269,22 @@
   font-weight: normal;
   font-style: normal;
 }
-.main {
+html {
   font-size: 14px;
   font-family: 'Myriadpro-regular', 'Arial', Sans-Serif;
-  background: #fff;
-  color: #000;
 }
-.main__page {
+.summary {
   width: 100%;
   max-width: 1280px;
   min-height: 1810px;
   margin: 0 auto;
 }
-.main__column-1 {
+__column-1 {
   float: left;
   width: 33.28125%;
   margin: 7.109375% 6.171875% 0 4.921875%;
 }
-.main__column-2 {
+__column-2 {
   float: left;
   width: 50.9375%;
   margin: 6.09375% 4.6875% 0 0;
