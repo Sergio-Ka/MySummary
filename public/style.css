@@ -272,6 +272,13 @@
 html {
   font-size: 14px;
   font-family: 'Myriadpro-regular', 'Arial', Sans-Serif;
+  background: #fff;
+  color: #000;
+}
+@media only screen and (max-width: 26.785rem) {
+  html {
+    font-size: 10px;
+  }
 }
 .summary {
   width: 100%;
@@ -284,31 +291,28 @@ html {
   width: 30.425rem;
   margin: 6.5rem 5.6rem 0 4.5rem;
 }
+@media only screen and (max-width: 60rem) {
+  .summary__column-1 {
+    width: 88.90625%;
+  }
+}
+@media only screen and (max-width: 87rem) {
+  .summary__column-1 {
+    margin: 1rem;
+  }
+}
 .summary__column-2 {
   float: left;
   width: 46.6rem;
   margin: 5.5rem 0 0 0;
 }
-@media only screen and (max-width: 26.785rem) {
-  .main {
-    font-size: 10px;
-  }
-}
 @media only screen and (max-width: 60rem) {
-  .main__column-1 {
+  .summary__column-2 {
     width: 88.90625%;
-    margin: 1rem;
-  }
-  .main__column-2 {
-    width: 88.90625%;
-    margin: 1rem;
   }
 }
 @media only screen and (max-width: 87rem) {
-  .main__column-1 {
-    margin: 1rem;
-  }
-  .main__column-2 {
+  .summary__column-2 {
     margin: 1rem;
   }
 }
