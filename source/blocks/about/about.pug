@@ -1,8 +1,10 @@
-section.about
-    .about__photo
-        .photo
-            .photo__circle
-    .about__name
-        .name name here
-    .surname surname
-    .prof graphic designer
+mixin about(options)
+    if (!options)
+        -options = {name:"name", surname:"surname", profession:"profession"};
+    -let {name="name", surname="surname", profession="profession"} = options;
+    section.about
+        .about__photo
+            .about__image
+        .about__name= name
+        .about__surname= surname
+        .about__profession= profession

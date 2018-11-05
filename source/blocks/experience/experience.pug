@@ -1,7 +1,10 @@
-section.experience
-    +header-of-block("icon-experience", "experience")
-    .experience__list
-        ul.content-list
-            +content-list__item("", "company name", "// Feb 2011 - Jun 2014", "your job here", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
-            +content-list__item("", "company name", "// Feb 2011 - Jun 2014", "your job here", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
-            +content-list__item("", "company name", "// Feb 2011 - Jun 2014", "your job here", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.")
+include ../header-of-block/header-of-block.pug
+include ../content-list__item/content-list.pug
+
+mixin experience(options)
+    if (!options)
+        -options = [{headerColor:"black", headerOfItem:"company name", date:"// Feb 2011 - Jun 2014", headerSecond:"your job here", text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."}];
+    section.experience
+        +header-of-block("experience")
+        .experience__content
+            +content-list(options)

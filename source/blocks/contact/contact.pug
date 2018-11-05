@@ -1,18 +1,24 @@
-section.contact
-    +header-of-block("icon-contact", "contact")
-    .contact__table
-        .contact__row
-            .contact__cell.contact__cell_color_blue.contact__cell_case_upper address
-            .contact__cell Main Street, City.
-        .contact__row
-            .contact__cell.contact__cell_color_blue.contact__cell_case_upper e-mail
-            .contact__cell
-                a.contact__cell-mail(href="mailto: contact@domain.com") contact@domain.com
-        .contact__row
-            .contact__cell.contact__cell_color_blue.contact__cell_case_upper phone
-            .contact__cell
-                a.contact__cell-tel(href="tel: 555-555-555") 555-555-555
-        .contact__row
-            .contact__cell.contact__cell_color_blue.contact__cell_case_upper website
-            .contact__cell
-                a.contact__cell-site(href="http://www.yourweb.com/", target="_blank", rel="noopener noreferrer") www.yourweb.com
+include ../header-of-block/header-of-block.pug
+
+mixin contact(options)
+    if (!options)
+        -options = {address:"Main Street, City.", email:"contact@domain.com", phone:"555-555-555", website:"www.yourweb.com"};
+    -let {address="Main Street, City.", email="contact@domain.com", phone="555-555-555", website="www.yourweb.com"} = options;
+    section.contact
+        +header-of-block("contact")
+        .contact__table
+            .contact__row
+                .contact__cell.contact__cell_color_blue.contact__cell_case_upper address
+                .contact__cell= address
+            .contact__row
+                .contact__cell.contact__cell_color_blue.contact__cell_case_upper e-mail
+                .contact__cell
+                    a.contact__cell-mail(href="mailto: "+email)= email
+            .contact__row
+                .contact__cell.contact__cell_color_blue.contact__cell_case_upper phone
+                .contact__cell
+                    a.contact__cell-telephone(href="tel: "+phone)= phone
+            .contact__row
+                .contact__cell.contact__cell_color_blue.contact__cell_case_upper website
+                .contact__cell
+                    a.contact__cell-site(href="http://"+website+"/", target="_blank", rel="noopener noreferrer")= website

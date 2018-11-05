@@ -1,16 +1,14 @@
-mixin software-level(softwareName, softwareLevel)
-    .software-name= softwareName
-    .software-scale
-        .software-scale(class="software-scale_num"+softwareLevel)
+include ../header-of-block/header-of-block.pug
 
-section.software
-    +header-of-block("icon-software", "software")
-    .software-content
-        .software-content__container-1
-            +software-level("photoshop", 1)
-            +software-level("illustrator", 3)
-            +software-level("indesign", 5)
-        .software-content__container-2
-            +software-level("dreamweaver", 2)
-            +software-level("after effects", 4)
-            +software-level("html&css3", 6)
+mixin software(options)
+    if (!options)
+        -options = [{software:"photoshop", level:"91.228"}];
+    section.software
+        +header-of-block("software")
+        .software__content
+            -options.forEach(function(item, i, arr) {
+                .software__item
+                    .software__name= item.software
+                    .software__scale
+                        .software__scale.software__scale_filled(style= 'width: ' + item.level + '%;')
+            -});

@@ -1,3 +1,12 @@
+include blocks/summary/summary.pug
+include blocks/about/about.pug
+include blocks/profile/profile.pug
+include blocks/contact/contact.pug
+include blocks/skills/skills.pug
+include blocks/education/education.pug
+include blocks/experience/experience.pug
+include blocks/software/software.pug
+
 doctype html
 html
     head
@@ -9,15 +18,27 @@ html
         link(rel = "shortcut icon", href = require('./images/favicon.ico'), type = "image/x-icon")/
         title Моё резюме
     body
-        main.summary
-            include blocks/common/header-of-block/header-of-block.pug
-            include blocks/common/content-list__item/content-list__item.pug
-            section.summary__column-1
-                include blocks/about/about.pug
-                include blocks/profile/profile.pug
-                include blocks/contact/contact.pug
-                include blocks/skills/skills.pug
-            section.summary__column-2
-                include blocks/education/education.pug
-                include blocks/experience/experience.pug
-                include blocks/software/software.pug
+        +summary()
+            +summary-column-left()
+                +about({name:"name here", surname:"surname", profession:"graphic designer"})
+                +profile({text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu", 
+                        textFontWeightBold:"pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum."})
+                +contact({address:"Main Street, City.", email:"contact@domain.com", phone:"555-555-555", website:"www.yourweb.com"})
+                +skills([{skill:"creative", skillLevel:"9", maxSkillLevel:"12"},
+                        {skill:"teamwork", skillLevel:"11", maxSkillLevel:"12"},
+                        {skill:"innovate", skillLevel:"6", maxSkillLevel:"12"},
+                        {skill:"communication", skillLevel:"11", maxSkillLevel:"12"}])
+            +summary-column-right()
+                +education([{headerColor:"blue", headerOfItem:"master degree", date:"// Feb 2011 - Jun 2014", headerSecond:"university name", text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."},
+                            {headerColor:"blue", headerOfItem:"master degree", date:"// Feb 2011 - Jun 2014", headerSecond:"university name", text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."},
+                            {headerColor:"blue", headerOfItem:"master degree", date:"// Feb 2011 - Jun 2014", headerSecond:"university name", text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."},
+                            {headerColor:"blue", headerOfItem:"master degree", date:"// Feb 2011 - Jun 2014", headerSecond:"university name", text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."}])
+                +experience([{headerColor:"black", headerOfItem:"company name", date:"// Feb 2011 - Jun 2014", headerSecond:"your job here", text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."},
+                            {headerColor:"black", headerOfItem:"company name", date:"// Feb 2011 - Jun 2014", headerSecond:"your job here", text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."},
+                            {headerColor:"black", headerOfItem:"company name", date:"// Feb 2011 - Jun 2014", headerSecond:"your job here", text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."}])
+                +software([{software:"photoshop", level:"91.228"},
+                            {software:"dreamweaver", level:"83.157"},
+                            {software:"illustrator", level:"70.526"},
+                            {software:"after effects", level:"61.754"},
+                            {software:"indesign", level:"56.491"},
+                            {software:"html&css3", level:"91.228"}])

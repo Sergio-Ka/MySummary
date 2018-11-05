@@ -1,43 +1,18 @@
 .software
   min-height 31.857rem
-  &-name
+  &__item
+    display inline-block
+    margin 1.2rem 4.5rem 0.28rem 0.65rem
+  &__item:nth-child(2n)
+    margin-right 0
+  &__name
     font-size 1.92rem
     text-transform uppercase
     white-space nowrap
     margin-bottom 0.85rem
-  &-scale
+  &__scale
     width 20.357rem
     height 1.643rem
     background #e6e6e6
-    margin-bottom 1.5rem
-  &-scale_num1
-    width 91.228070%
+  &__scale_filled
     background #3d6cb0
-  &-scale_num2
-    width 83.157894%
-    background #3d6cb0
-  &-scale_num3
-    width 70.526315%
-    background #3d6cb0
-  &-scale_num4
-    width 61.754385%
-    background #3d6cb0
-  &-scale_num5
-    width 56.491228%
-    background #3d6cb0
-  &-scale_num6
-    width 91.228070%
-    background #3d6cb0
-  &-content__container-1
-    float left
-    width 50%
-    margin 1.07rem 0 0 0.7rem
-    @media only screen and (max-width 75rem)
-      width 100%
-  &-content__container-2
-    float right
-    width 44%
-    margin 1.07rem 0 0 0.7rem
-    @media only screen and (max-width 75rem)
-      width 100%
-      float left

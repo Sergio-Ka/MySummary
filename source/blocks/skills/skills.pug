@@ -1,18 +1,21 @@
-mixin skill(skillName, skillLevel)
-    .skills__feature
-        .skill-name= skillName
-    .skill-scale
-        - for(var i=0;i<12;i++) {
-            - if(i<skillLevel)
-                .skill-scale__circle
-            - else
-                .skill-scale__circle.skill-scale__circle_inactive
-        - }
+include ../header-of-block/header-of-block.pug
 
-section.skills
-    +header-of-block("icon-skills", "skills")
-    .skills__content
-        +skill("creative", 9)
-        +skill("teamwork", 11)
-        +skill("innovate", 6)
-        +skill("communication", 11)
+mixin skills(options)
+    if (!options)
+        -options = [{skill:"creative", skillLevel:"9", maxSkillLevel:"12"}];
+    section.skills
+        +header-of-block("skills")
+        .skills__content
+            -options.forEach(function(item, i, arr) {
+                .skills__feature
+                    .skills__name= item.skill
+                .skills__scale
+                    - for (let i = 0; i < item.maxSkillLevel; i += 1) {
+                        - if (i < item.skillLevel) {
+                            .skills__scale-circle
+                        - } else {
+                            .skills__scale-circle.skills__scale-circle_inactive
+                        - }
+                    - }
+            -});
+                
