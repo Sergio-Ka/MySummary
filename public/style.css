@@ -174,7 +174,7 @@
   padding: 1.357rem 0 0.643rem 0;
 }
 .skills__feature:first-child {
-  padding: 0.85rem 0 0.643rem 0;
+  padding: 0.75rem 0 0.643rem 0;
 }
 .skills__name {
   font-size: 1.93rem;
@@ -208,7 +208,7 @@
 }
 .software__item {
   display: inline-block;
-  margin: 1.2rem 4.5rem 0.28rem 0.65rem;
+  margin: 1.1rem 4.5rem 0.28rem 0.65rem;
 }
 .software__item:nth-child(2n) {
   margin-right: 0;
