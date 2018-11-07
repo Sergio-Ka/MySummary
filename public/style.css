@@ -44,6 +44,14 @@
 .contact {
   min-height: 24.857rem;
 }
+.contact__content {
+  display: flex;
+}
+@media only screen and (max-width: 83rem) {
+  .contact__content {
+    justify-content: center;
+  }
+}
 .contact__table {
   margin: 1.429rem 0 0 0;
   display: table;
@@ -183,41 +191,45 @@
 }
 .skills__scale {
   display: flex;
-  width: 77.751756%;
+  justify-content: space-around;
+  width: 81%;
   margin: 0 auto;
 }
 .skills__scale-circle {
-  display: inline-block;
   width: 1.286rem;
   height: 1.286rem;
   border-radius: 0.643rem;
-  margin: 0 0.4rem;
   background: #3d6cb0;
-}
-.skills__scale-circle:first-child {
-  margin-left: 0;
 }
 .skills__scale-circle_inactive {
   background: #e6e6e6;
 }
-.skills__scale-circle_inactive:last-child {
-  margin-right: 0;
-}
 .software {
   min-height: 31.857rem;
 }
-.software__item {
-  display: inline-block;
-  margin: 1.1rem 4.5rem 0.28rem 0.65rem;
+.software__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.software__item:nth-child(2n) {
-  margin-right: 0;
+@media only screen and (max-width: 95rem) {
+  .software__content {
+    justify-content: space-around;
+  }
+}
+.software__item {
+  margin: 1.1rem 0 0.3rem 0.65rem;
 }
 .software__name {
   font-size: 1.92rem;
   text-transform: uppercase;
   white-space: nowrap;
   margin-bottom: 0.85rem;
+}
+@media only screen and (max-width: 83rem) {
+  .software__name {
+    text-align: center;
+  }
 }
 .software__scale {
   width: 20.357rem;
@@ -239,13 +251,9 @@
   width: 30.425rem;
   margin: 6.5rem 5.6rem 0 4.5rem;
 }
-@media only screen and (max-width: 60rem) {
+@media only screen and (max-width: 83rem) {
   .summary__column_position_left {
-    width: 88.90625%;
-  }
-}
-@media only screen and (max-width: 87rem) {
-  .summary__column_position_left {
+    width: 95%;
     margin: 1rem;
   }
 }
@@ -254,13 +262,9 @@
   width: 46.6rem;
   margin: 5.5rem 0 0 0;
 }
-@media only screen and (max-width: 60rem) {
+@media only screen and (max-width: 83rem) {
   .summary__column_position_right {
-    width: 88.90625%;
-  }
-}
-@media only screen and (max-width: 87rem) {
-  .summary__column_position_right {
+    width: 95%;
     margin: 1rem;
   }
 }

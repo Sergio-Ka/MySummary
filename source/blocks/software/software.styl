@@ -1,15 +1,20 @@
 .software
   min-height 31.857rem
+  &__content
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    @media only screen and (max-width 95rem)
+      justify-content space-around
   &__item
-    display inline-block
-    margin 1.1rem 4.5rem 0.28rem 0.65rem
-  &__item:nth-child(2n)
-    margin-right 0
+    margin 1.1rem 0 0.3rem 0.65rem
   &__name
     font-size 1.92rem
     text-transform uppercase
     white-space nowrap
     margin-bottom 0.85rem
+    @media only screen and (max-width 83rem)
+      text-align center
   &__scale
     width 20.357rem
     height 1.643rem
