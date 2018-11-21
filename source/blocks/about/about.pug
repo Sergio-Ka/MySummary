@@ -1,6 +1,4 @@
-mixin about(options)
-    if (!options)
-        -options = {name:"name", surname:"surname", profession:"profession"};
+mixin about(options = {name:"name", surname:"surname", profession:"profession"})
     -let {name="name", surname="surname", profession="profession"} = options;
     section.about
         .about__photo

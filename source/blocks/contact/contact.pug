@@ -1,8 +1,6 @@
 include ../header-of-block/header-of-block.pug
 
-mixin contact(options)
-    if (!options)
-        -options = {address:"Main Street, City.", email:"contact@domain.com", phone:"555-555-555", website:"www.yourweb.com"};
+mixin contact(options = {address:"Main Street, City.", email:"contact@domain.com", phone:"555-555-555", website:"www.yourweb.com"})
     -let {address="Main Street, City.", email="contact@domain.com", phone="555-555-555", website="www.yourweb.com"} = options;
     section.contact
         +header-of-block("contact")

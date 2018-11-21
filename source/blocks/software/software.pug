@@ -1,8 +1,6 @@
 include ../header-of-block/header-of-block.pug
 
-mixin software(options)
-    if (!options)
-        -options = [{software:"photoshop", level:"91.228"}];
+mixin software(options = [{software:"photoshop", level:"91.228"}])
     section.software
         +header-of-block("software")
         .software__content

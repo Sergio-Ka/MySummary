@@ -1,8 +1,6 @@
 include ../header-of-block/header-of-block.pug
 
-mixin skills(options)
-    if (!options)
-        -options = [{skill:"creative", skillLevel:"9", maxSkillLevel:"12"}];
+mixin skills(options = [{skill:"creative", skillLevel:"9", maxSkillLevel:"12"}])
     section.skills
         +header-of-block("skills")
         .skills__content

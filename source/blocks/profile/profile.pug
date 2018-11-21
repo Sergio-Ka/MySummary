@@ -1,8 +1,6 @@
 include ../header-of-block/header-of-block.pug
 
-mixin profile(options)
-    if (!options)
-        -options = {text:"empty", textFontWeightBold:" empty"};
+mixin profile(options = {text:"empty", textFontWeightBold:" empty"})
     -let {text="empty", textFontWeightBold=" empty"} = options;
     section.profile
         +header-of-block("profile")
