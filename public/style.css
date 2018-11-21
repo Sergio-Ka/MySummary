@@ -89,6 +89,7 @@
 }
 .content-list {
   list-style: none;
+  list-style-image: url(images/list-item-dot.png);
 }
 .content-list__item-name {
   display: inline-block;
@@ -118,9 +119,6 @@
   font-size: 1.14rem;
   line-height: 1.365rem;
   word-break: normal;
-}
-.content-list {
-  list-style-image: url(images/list-item-dot.png);
 }
 .education {
   min-height: 50.5rem;
