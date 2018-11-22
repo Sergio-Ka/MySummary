@@ -1,6 +1,8 @@
 .about {
   min-height: 35.57rem;
   padding-left: 1.625rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 60rem) {
   .about {
@@ -24,22 +26,15 @@
 }
 .about__name {
   line-height: 3.3rem;
-  text-align: center;
   font-size: 4.1rem;
-  text-transform: uppercase;
 }
 .about__surname {
-  text-align: center;
   font-size: 4.5rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 .about__profession {
-  text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
 }
 .contact {
   min-height: 24.857rem;
@@ -58,17 +53,14 @@
 .contact__row {
   display: flex;
   justify-content: flex-start;
+  height: 4rem;
 }
 .contact__term {
-  height: 4rem;
   flex-basis: 9.5rem;
   color: #3d6cb0;
   font-weight: bold;
   text-transform: uppercase;
   word-break: normal;
-}
-.contact__definition {
-  height: 4rem;
 }
 .contact__definition-link {
   text-decoration: none;
@@ -78,27 +70,24 @@
   list-style: none;
   list-style-image: url(images/list-item-dot.png);
 }
+.content-list__item {
+  padding-bottom: 0.786rem;
+  font-size: 1.92rem;
+}
 .content-list__item-name {
   display: inline-block;
-  font-size: 1.92rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 .content-list__item-name_color_blue {
   color: #3d6cb0;
 }
-.content-list__item {
-  padding-bottom: 0.786rem;
-}
 .content-list__item-date {
   display: inline-block;
-  font-size: 1.92rem;
-  font-weight: lighter;
   padding-left: 1.4rem;
 }
 .content-list__item-second-name {
   padding-top: 0.143rem;
-  font-size: 1.92rem;
   text-transform: uppercase;
 }
 .content-list__item-description {
@@ -137,9 +126,6 @@
   text-transform: uppercase;
   color: #3d6cb0;
 }
-.header-of-block__line-block {
-  flex-grow: 1;
-}
 .header-of-block__line {
   border: 0.21rem solid #3d6cb0;
 }
@@ -147,6 +133,9 @@
   .header-of-block__line {
     display: none;
   }
+}
+.header-of-block__line-block {
+  flex-grow: 1;
 }
 .profile {
   min-height: 27.36rem;
@@ -167,7 +156,7 @@
   padding: 1.357rem 0 0.643rem 0;
 }
 .skills__feature:first-child {
-  padding: 0.75rem 0 0.643rem 0;
+  padding-top: 0.75rem;
 }
 .skills__name {
   font-size: 1.93rem;
@@ -183,7 +172,7 @@
 .skills__scale-circle {
   width: 1.286rem;
   height: 1.286rem;
-  border-radius: 0.643rem;
+  border-radius: 50%;
   background: #3d6cb0;
 }
 .skills__scale-circle_inactive {
@@ -231,27 +220,22 @@
   margin: 0 auto;
   word-break: break-all;
 }
-.summary__column_position_left {
+.summary__column {
   float: left;
+}
+@media only screen and (max-width: 83rem) {
+  .summary__column {
+    width: 95%;
+    margin: 1rem;
+  }
+}
+.summary__column_position_left {
   width: 30.425rem;
   margin: 6.5rem 5.6rem 0 4.5rem;
 }
-@media only screen and (max-width: 83rem) {
-  .summary__column_position_left {
-    width: 95%;
-    margin: 1rem;
-  }
-}
 .summary__column_position_right {
-  float: left;
   width: 46.6rem;
   margin: 5.5rem 0 0 0;
-}
-@media only screen and (max-width: 83rem) {
-  .summary__column_position_right {
-    width: 95%;
-    margin: 1rem;
-  }
 }
 @font-face {
   font-family: 'Myriadpro-regular';
