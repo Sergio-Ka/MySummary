@@ -1,32 +1,25 @@
 .contact
   min-height 24.857rem
   &__content
-    display flex
     @media only screen and (max-width 83rem)
+      display flex
       justify-content center
-  &__table
-    margin 1.429rem 0 0 0
-    display table
-  &__row
-    display table-row
-    height 4rem
-  &__cell
-    display table-cell
+  &__list
+    margin 1.3rem 0 0 0
     font-size 1.53rem
-    &-mail
-      text-decoration none
-      color #000000
-    &-telephone
-      text-decoration none
-      color #000000
-    &-site
-      text-decoration none
-      color #000000
-  &__cell_color_blue
-    padding-right 3.1rem
+    flex-basis 25rem
+  &__row
+    display flex
+    justify-content flex-start
+  &__term
+    height 4rem
+    flex-basis 9.5rem
     color #3d6cb0
     font-weight bold
-  &__cell_case_upper
     text-transform uppercase
-  &__cell_word-break_normal
     word-break normal
+  &__definition
+    height 4rem
+    &-link
+      text-decoration none
+      color #000000

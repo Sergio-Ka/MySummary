@@ -44,48 +44,35 @@
 .contact {
   min-height: 24.857rem;
 }
-.contact__content {
-  display: flex;
-}
 @media only screen and (max-width: 83rem) {
   .contact__content {
+    display: flex;
     justify-content: center;
   }
 }
-.contact__table {
-  margin: 1.429rem 0 0 0;
-  display: table;
+.contact__list {
+  margin: 1.3rem 0 0 0;
+  font-size: 1.53rem;
+  flex-basis: 25rem;
 }
 .contact__row {
-  display: table-row;
+  display: flex;
+  justify-content: flex-start;
+}
+.contact__term {
   height: 4rem;
-}
-.contact__cell {
-  display: table-cell;
-  font-size: 1.53rem;
-}
-.contact__cell-mail {
-  text-decoration: none;
-  color: #000;
-}
-.contact__cell-telephone {
-  text-decoration: none;
-  color: #000;
-}
-.contact__cell-site {
-  text-decoration: none;
-  color: #000;
-}
-.contact__cell_color_blue {
-  padding-right: 3.1rem;
+  flex-basis: 9.5rem;
   color: #3d6cb0;
   font-weight: bold;
-}
-.contact__cell_case_upper {
   text-transform: uppercase;
-}
-.contact__cell_word-break_normal {
   word-break: normal;
+}
+.contact__definition {
+  height: 4rem;
+}
+.contact__definition-link {
+  text-decoration: none;
+  color: #000;
 }
 .content-list {
   list-style: none;

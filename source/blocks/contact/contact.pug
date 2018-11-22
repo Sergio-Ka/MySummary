@@ -5,19 +5,19 @@ mixin contact(options = {address:"Main Street, City.", email:"contact@domain.com
     section.contact
         +header-of-block("contact")
         .contact__content
-            .contact__table
+            .contact__list
                 .contact__row
-                    .contact__cell.contact__cell_color_blue.contact__cell_case_upper.contact__cell_word-break_normal address
-                    .contact__cell= address
+                    .contact__term address
+                    .contact__definition= address
                 .contact__row
-                    .contact__cell.contact__cell_color_blue.contact__cell_case_upper.contact__cell_word-break_normal e-mail
-                    .contact__cell
-                        a.contact__cell-mail(href="mailto: "+email)= email
+                    .contact__term e-mail
+                    .contact__definition
+                        a.contact__definition-link(href="mailto: "+email)= email
                 .contact__row
-                    .contact__cell.contact__cell_color_blue.contact__cell_case_upper.contact__cell_word-break_normal phone
-                    .contact__cell
-                        a.contact__cell-telephone(href="tel: "+phone)= phone
+                    .contact__term phone
+                    .contact__definition
+                        a.contact__definition-link(href="tel: "+phone)= phone
                 .contact__row
-                    .contact__cell.contact__cell_color_blue.contact__cell_case_upper.contact__cell_word-break_normal website
-                    .contact__cell
-                        a.contact__cell-site(href="http://"+website+"/", target="_blank", rel="noopener noreferrer")= website
+                    .contact__term website
+                    .contact__definition
+                        a.contact__definition-link(href="http://"+website+"/", target="_blank", rel="noopener noreferrer")= website
