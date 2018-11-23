@@ -39,16 +39,16 @@
 .contact {
   min-height: 24.857rem;
 }
+.contact__content {
+  margin: 1.3rem 0 0 0;
+  font-size: 1.53rem;
+  flex-basis: 25rem;
+}
 @media only screen and (max-width: 83rem) {
   .contact__content {
     display: flex;
     justify-content: center;
   }
-}
-.contact__list {
-  margin: 1.3rem 0 0 0;
-  font-size: 1.53rem;
-  flex-basis: 25rem;
 }
 .contact__row {
   display: flex;
@@ -223,12 +223,6 @@
 .summary__column {
   float: left;
 }
-@media only screen and (max-width: 83rem) {
-  .summary__column {
-    width: 95%;
-    margin: 1rem;
-  }
-}
 .summary__column_position_left {
   width: 30.425rem;
   margin: 6.5rem 5.6rem 0 4.5rem;
@@ -236,6 +230,12 @@
 .summary__column_position_right {
   width: 46.6rem;
   margin: 5.5rem 0 0 0;
+}
+@media only screen and (max-width: 83rem) {
+  .summary__column {
+    width: 95%;
+    margin: 1rem;
+  }
 }
 @font-face {
   font-family: 'Myriadpro-regular';
