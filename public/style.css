@@ -39,16 +39,16 @@
 .contact {
   min-height: 24.857rem;
 }
-.contact__content {
-  margin: 1.3rem 0 0 0;
-  font-size: 1.53rem;
-  flex-basis: 25rem;
-}
 @media only screen and (max-width: 83rem) {
   .contact__content {
     display: flex;
     justify-content: center;
   }
+}
+.contact__list {
+  margin: 1.3rem 0 0 0;
+  font-size: 1.53rem;
+  flex-basis: 25rem;
 }
 .contact__row {
   display: flex;
@@ -146,7 +146,7 @@
   line-height: 1.365rem;
   word-break: normal;
 }
-.profile__content_font-weight_bold {
+.profile__content_marked {
   font-weight: bold;
 }
 .skills {

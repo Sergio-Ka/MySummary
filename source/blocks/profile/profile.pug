@@ -1,9 +1,9 @@
 include ../header-of-block/header-of-block.pug
 
-mixin profile(options = {text:"empty", textFontWeightBold:" empty"})
-    -let {text="empty", textFontWeightBold=" empty"} = options;
+mixin profile(options = {text:"empty", textMarked:" empty"})
+    -let {text="empty", textMarked=" empty"} = options;
     section.profile
         +header-of-block("profile")
         p.profile__content= text
-            span.profile__content_font-weight_bold= textFontWeightBold
+            span.profile__content_marked= textMarked
 
