@@ -1,6 +1,5 @@
 .about {
-  min-height: 35.57rem;
-  padding-left: 1.625rem;
+  padding: 0 0 5.2rem 1.625rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -37,7 +36,7 @@
   font-weight: bold;
 }
 .contact {
-  min-height: 24.857rem;
+  padding: 0 0 1.25rem 0;
 }
 @media only screen and (max-width: 83rem) {
   .contact__content {
@@ -98,13 +97,13 @@
   word-break: normal;
 }
 .education {
-  min-height: 50.5rem;
+  padding: 0 0 2.8rem 0;
 }
 .education__content {
   margin: 0.929rem 0 0 4rem;
 }
 .experience {
-  min-height: 41.6rem;
+  padding: 0 0 2.8rem 0;
 }
 .experience__content {
   margin: 2.143rem 0 0 4rem;
@@ -139,7 +138,7 @@
   flex-grow: 1;
 }
 .profile {
-  min-height: 27.36rem;
+  padding: 0 0 2rem 0;
 }
 .profile__content {
   margin-top: 0;
@@ -151,7 +150,7 @@
   font-weight: bold;
 }
 .skills {
-  min-height: 32.143rem;
+  padding: 0 0 2rem 0;
 }
 .skills__feature {
   padding: 1.357rem 0 0.643rem 0;
@@ -180,7 +179,7 @@
   background: #e6e6e6;
 }
 .software {
-  min-height: 31.857rem;
+  padding: 0 0 2rem 0;
 }
 .software__content {
   display: flex;
@@ -220,6 +219,11 @@
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 56rem) {
+  .summary {
+    flex-wrap: wrap;
+  }
+}
 .summary__column_position_left {
   width: 30.425rem;
   margin: 6.5rem 5.6rem 0 4.5rem;
@@ -228,10 +232,10 @@
   width: 46.6rem;
   margin: 5.5rem 0 0 0;
 }
-@media only screen and (max-width: 83rem) {
+@media only screen and (max-width: 56rem) {
   .summary__column {
     width: 95%;
-    margin: 1rem;
+    margin: 2.5%;
   }
 }
 @font-face {
