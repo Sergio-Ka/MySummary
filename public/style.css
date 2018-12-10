@@ -169,13 +169,13 @@
   width: 81%;
   margin: 0 auto;
 }
-.skills__scale-circle {
+.skills__scale-mark {
   width: 1.286rem;
   height: 1.286rem;
   border-radius: 50%;
   background: #3d6cb0;
 }
-.skills__scale-circle_inactive {
+.skills__scale-mark_inactive {
   background: #e6e6e6;
 }
 .software {

@@ -10,9 +10,9 @@ mixin skills(options = [{skill:"creative", skillLevel:"9", maxSkillLevel:"12"}])
                 .skills__scale
                     - for (let i = 0; i < item.maxSkillLevel; i += 1) {
                         - if (i < item.skillLevel) {
-                            .skills__scale-circle
+                            .skills__scale-mark
                         - } else {
-                            .skills__scale-circle.skills__scale-circle_inactive
+                            .skills__scale-mark.skills__scale-mark_inactive
                         - }
                     - }
             -});
