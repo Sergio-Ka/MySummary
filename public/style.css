@@ -67,8 +67,9 @@
   color: #000;
 }
 .content-list {
-  list-style: none;
   list-style-image: url(images/list-item-dot.png);
+  margin: 0;
+  padding: 0;
 }
 .content-list__item {
   padding-bottom: 0.786rem;
@@ -100,13 +101,13 @@
   min-height: 50.5rem;
 }
 .education__content {
-  margin: 0.929rem 0 0 1.2rem;
+  margin: 0.929rem 0 0 4rem;
 }
 .experience {
   min-height: 41.6rem;
 }
 .experience__content {
-  margin: 2.143rem 0 0 1.1rem;
+  margin: 2.143rem 0 0 4rem;
 }
 .header-of-block {
   display: flex;
@@ -215,13 +216,9 @@
 }
 .summary {
   width: 100%;
-  max-width: 91.42rem;
-  min-height: 129.285rem;
-  margin: 0 auto;
   word-break: break-all;
-}
-.summary__column {
-  float: left;
+  display: flex;
+  justify-content: center;
 }
 .summary__column_position_left {
   width: 30.425rem;
