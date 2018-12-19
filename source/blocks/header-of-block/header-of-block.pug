@@ -1,6 +1,6 @@
 mixin header-of-block(categoryDefinition)
 	.header-of-block
-		img.header-of-block__icon(src=require('./blocks/header-of-block/images/icon-'+categoryDefinition+'.png'))
+		img.header-of-block__icon(src=require(`./blocks/header-of-block/images/icon-${categoryDefinition}.png`))
 		.header-of-block__category-definition= categoryDefinition
 		.header-of-block__line-block
 			hr.header-of-block__line

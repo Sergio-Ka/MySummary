@@ -2,7 +2,7 @@ mixin content-list(options)
     ul.content-list
         -options.forEach(function(item, i, arr) {
             li.content-list__item
-                .content-list__item-name(class= "content-list__item-name_color_"+item.headerColor)= item.headerOfItem
+                .content-list__item-name(class= `content-list__item-name_color_${item.headerColor}`)= item.headerOfItem
                 .content-list__item-date= item.date
                 .content-list__item-second-name= item.headerSecond
                 .content-list__item-description= item.text

@@ -8,5 +8,5 @@ mixin software(options = [{software:"photoshop", level:"91.228"}])
                 .software__item
                     .software__name= item.software
                     .software__scale
-                        .software__scale.software__scale_filled(style= 'width: ' + item.level + '%;')
+                        .software__scale.software__scale_filled(style= `width: ${item.level}%;`)
             -});
