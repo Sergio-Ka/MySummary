@@ -1,8 +1,0 @@
-include ../header-of-block/header-of-block.pug
-include ../content-list/content-list.pug
-
-mixin education(options = [{headerColor:"blue", headerOfItem:"master degree", date:"// Feb 2011 - Jun 2014", headerSecond:"university name", text:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."}])
-    section.education
-        +header-of-block("education")
-        .education__content
-            +content-list(options)
