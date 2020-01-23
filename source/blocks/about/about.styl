@@ -1,38 +1,34 @@
 .about
-	min-height 498px
-	padding-left 4.5%
-	&__photo
-		width 17.1rem
-		height 17.1rem
-		margin auto
-	&__name
-		margin 22px 0 -18px 0
+  padding 0 0 5.2rem 1.625rem
+  text-align center
+  text-transform uppercase
 
-.photo
-	height 100%
-	border 1px solid #3d6cb0
-	border-radius 50%
-	&__circle
-		width 88.3333%
-		height 88.3333%
-		background #3d6cb0
-		border-radius 50%
-		margin 5.8333%
+  @media only screen and (max-width 60rem)
+    padding 0
 
-.name
-	text-align center
-	font-size 4.1rem
+  &__photo
+    width 17.131rem
+    height 17.131rem
+    margin auto
+    border 0.0625rem solid #3d6cb0
+    border-radius 8.55rem
+    margin-bottom 2.1rem
 
-.surname
-	text-align center
-	font-size 4.5rem
-	font-weight bold
+  &__image
+    width 14.9rem
+    height 14.9rem
+    border-radius 7.45rem
+    background #3d6cb0
+    margin 1.1rem
 
-.prof
-	text-align center
-	font-size 1.8rem
-	font-weight bold
+  &__name
+    line-height 3.3rem
+    font-size 4.1rem
 
-@media only screen and (max-width 840px)
-	.about
-		padding 0
+  &__surname
+    font-size 4.5rem
+    font-weight bold
+
+  &__profession
+    font-size 1.8rem
+    font-weight bold

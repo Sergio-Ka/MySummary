@@ -1,15 +1,29 @@
 .contact
-	min-height 348px
-	&__table
-		margin 20px 0 0 0
-		display table
-	&__row
-		display table-row
-		height 56px
-	&__cell
-		display table-cell
-		font-size 1.53rem
-	&__cell_color_blue
-		padding-right 2.678571vw
-		color #3d6cb0
-		font-weight bold
+  padding 0 0 1.25rem 0
+
+  &__content
+    @media only screen and (max-width 83rem)
+      display flex
+      justify-content center
+
+  &__list
+    margin 1.3rem 0 0 0
+    font-size 1.53rem
+    flex-basis 25rem
+
+  &__row
+    display flex
+    justify-content flex-start
+    height 4rem
+
+  &__term
+    flex-basis 9.5rem
+    color #3d6cb0
+    font-weight bold
+    text-transform uppercase
+    word-break normal
+
+  &__definition
+    &-link
+      text-decoration none
+      color #000000

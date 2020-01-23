@@ -1,15 +1,23 @@
-div(class="contact")
-	+header-of-block("icon_2", "CONTACT")
-	div(class="contact__table")
-		div(class="contact__row")
-			div(class="contact__cell contact__cell_color_blue") ADDRESS
-			div(class="contact__cell") Main Street, City.
-		div(class="contact__row")
-			div(class="contact__cell contact__cell_color_blue") E-MAIL
-			div(class="contact__cell") contact@domain.com
-		div(class="contact__row")
-			div(class="contact__cell contact__cell_color_blue") PHONE
-			div(class="contact__cell") 555-555-555
-		div(class="contact__row")
-			div(class="contact__cell contact__cell_color_blue") WEBSITE
-			div(class="contact__cell") www.yourweb.com
+include ../header-of-block/header-of-block.pug
+
+mixin contact(options = {address:"Main Street, City.", email:"contact@domain.com", phone:"555-555-555", website:"www.yourweb.com"})
+    -let {address="Main Street, City.", email="contact@domain.com", phone="555-555-555", website="www.yourweb.com"} = options;
+    section.contact
+        +header-of-block("contact")
+        .contact__content
+            .contact__list
+                .contact__row
+                    .contact__term address
+                    .contact__definition= address
+                .contact__row
+                    .contact__term e-mail
+                    .contact__definition
+                        a.contact__definition-link(href=`mailto: ${email}`)= email
+                .contact__row
+                    .contact__term phone
+                    .contact__definition
+                        a.contact__definition-link(href=`tel: ${phone}`)= phone
+                .contact__row
+                    .contact__term website
+                    .contact__definition
+                        a.contact__definition-link(href=`http://${website}/`, target="_blank", rel="noopener noreferrer")= website
